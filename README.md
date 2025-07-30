@@ -1,18 +1,11 @@
-# LockerGnome Support Repository
+# LockerGnome Support
 
-Welcome to the LockerGnome support repository. This is the central place for community-based support, bug reporting, and feature requests.
+We use GitHub for organizing and managing support issues (both bug & feature requests). This helps us keep track of things, provide progress, and allow the community to contribute to providing solutions.
 
-## How to Get Support
+You can:
 
-We use GitHub for managing our support requests. This helps us keep track of issues and allows the community to contribute.
-
-### Discussions
-
-If you have a general question, want to share an idea, or are looking for help from the community, please **[start a new discussion](https://github.com/lockergnome/support/discussions)**.
-
-### Issues
-
-If you encounter a bug, a technical problem, or have a specific feature request, please **[open a new issue](https://github.com/lockergnome/support/issues)**.
+1. **[Click here to open a new issue if you run into a bug / problem on LockerGnome.net](https://github.com/lockergnome/support/issues)**
+2. **[Click here to propose a new feature (or iteration on an existing feature)](https://github.com/lockergnome/support/discussions)**
 
 When creating an issue, please provide as much detail as possible, including:
 - A clear and descriptive title.
