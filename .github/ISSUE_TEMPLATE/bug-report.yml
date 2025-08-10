@@ -1,0 +1,153 @@
+name: Bug report
+description: Report a problem or unexpected behavior on LockerGnome.net
+title: "[Bug]: <short description>"
+labels:
+	- bug
+body:
+	- type: markdown
+		attributes:
+			value: |
+				Thanks for taking the time to report a bug. Please fill out as much of this form as you can so we can reproduce and fix the issue quickly.
+				If your report involves a sensitive security or billing concern, STOP and email support@lockergnome.com instead of filing a public issue.
+
+	- type: input
+		id: summary
+		attributes:
+			label: Summary
+			description: A clear, concise description of the problem.
+			placeholder: e.g. Profile page crashes when clicking Save
+		validations:
+			required: true
+
+	- type: textarea
+		id: steps-to-reproduce
+		attributes:
+			label: Steps to reproduce
+			description: Numbered steps we can follow to see the problem ourselves.
+			placeholder: |
+				1. Go to ...
+				2. Click on ...
+				3. Scroll down to ...
+				4. Observe error ...
+		validations:
+			required: true
+
+	- type: textarea
+		id: expected
+		attributes:
+			label: Expected behavior
+			description: What you thought would happen.
+			placeholder: The profile should save and show a success message.
+		validations:
+			required: true
+
+	- type: textarea
+		id: actual
+		attributes:
+			label: Actual behavior
+			description: What actually happened. Include full error messages or stack traces if visible.
+			placeholder: The page shows a 500 error and the spinner never stops.
+		validations:
+			required: true
+
+	- type: textarea
+		id: screenshots
+		attributes:
+			label: Screenshots / screen recordings
+			description: Drag & drop images, or paste them. Include a link to a short screen recording if that helps.
+			placeholder: (Optional) Attach images or a GIF / video link.
+		validations:
+			required: false
+
+	- type: markdown
+		attributes:
+			value: "### Environment"
+
+	- type: dropdown
+		id: os
+		attributes:
+			label: Operating system
+			options:
+				- Windows
+				- macOS
+				- Linux
+				- iOS
+				- Android
+				- Other
+		validations:
+			required: true
+
+	- type: input
+		id: os-version
+		attributes:
+			label: OS version / build
+			placeholder: e.g. Windows 11 23H2, macOS 14.5, Ubuntu 24.04
+		validations:
+			required: false
+
+	- type: input
+		id: browser
+		attributes:
+			label: Browser & version
+			placeholder: e.g. Chrome 127.0.0.1, Firefox 128.0, Safari 17.5
+		validations:
+			required: true
+
+	- type: input
+		id: device
+		attributes:
+			label: Device (if mobile)
+			placeholder: e.g. iPhone 14 Pro, Pixel 8
+		validations:
+			required: false
+
+	- type: dropdown
+		id: regression
+		attributes:
+			label: Is this a regression?
+			description: Did this functionality work in a previous version / earlier this week?
+			options:
+				- Yes (it used to work)
+				- No (never worked for me)
+				- Not sure
+		validations:
+			required: false
+
+	- type: dropdown
+		id: severity
+		attributes:
+			label: Impact severity (self-assessed)
+			description: Helps us triage. We may adjust after reviewing.
+			options:
+				- Critical (data loss, security risk, major feature unusable)
+				- High (core feature broken, no workaround)
+				- Medium (important feature degraded, workaround exists)
+				- Low (minor issue, cosmetic, small annoyance)
+		validations:
+			required: true
+
+	- type: textarea
+		id: additional-context
+		attributes:
+			label: Additional context / notes
+			description: Logs, related issues, links to discussions, hypotheses, anything else that helps.
+			placeholder: Any other details that might help us debug.
+		validations:
+			required: false
+
+	- type: checkboxes
+		id: confirmations
+		attributes:
+			label: Pre-flight checklist
+			options:
+				- label: I searched existing issues and didn't find a duplicate.
+					required: true
+				- label: This is not a security or billing issue (those go to support@lockergnome.com).
+					required: true
+				- label: I included all required reproduction details.
+					required: true
+
+	- type: markdown
+		attributes:
+			value: |
+				Thanks! We may follow up with questions. Watch for notifications so we can move faster.
